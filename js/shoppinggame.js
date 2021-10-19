@@ -14,7 +14,7 @@ let player = {
     addPoints(points){
         this.score = this.score + points
     },
-    deductPoints(){
+    deductPoints(points){
         this.score = this.score - points
     }
 }
@@ -35,7 +35,7 @@ const dateDiff = (date1, date2) => {
 // Here, use Object.defineProperty to create property - daysToExpire
 Object.defineProperty(Product.prototype, "daysToExpire", {
     get: function(){
-        dateDiff(this.expiryDate, new Date())
+       return dateDiff(this.expiryDate, new Date())
     }
 })
 // Add method getDetails to Product here
