@@ -18,6 +18,7 @@ let player = {
         this.score = this.score - points
     }
 }
+
 // Define the Product class - write the Constructor function for Product class here
 function Product(id, name, price, expiryDate){
     this.id = id,
