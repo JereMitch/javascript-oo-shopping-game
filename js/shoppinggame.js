@@ -1,8 +1,8 @@
     let gameComplete = false;
 // Define the three constants here
-const name
-const score
-const items
+const name = this.name
+const score = this.score
+const items = this.items
 // Define the player object here
 player = {
     name: "Unknown",
